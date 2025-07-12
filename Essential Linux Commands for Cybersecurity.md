@@ -1,40 +1,42 @@
 This guide provides a comprehensive collection of Linux commands tailored for cybersecurity professionals, focusing on system monitoring, network analysis, file system investigation, and incident response. The commands are organized into logical sections, with complete and properly formatted code blocks for clarity and usability. Best practices are included to ensure non-disruptive execution on production systems.
 
-- [[#Initial Incident Response Triage|Initial Incident Response Triage]]
-	- [[#Initial Incident Response Triage#Incident Response Workflow|Incident Response Workflow]]
-- [[#Detecting Cryptocurrency Mining Malware|Detecting Cryptocurrency Mining Malware]]
-	- [[#Detecting Cryptocurrency Mining Malware#CPU Usage Analysis|CPU Usage Analysis]]
-	- [[#Detecting Cryptocurrency Mining Malware#Network Connection Analysis|Network Connection Analysis]]
-	- [[#Detecting Cryptocurrency Mining Malware#File System Indicators|File System Indicators]]
-	- [[#Detecting Cryptocurrency Mining Malware#Process Name Analysis|Process Name Analysis]]
-	- [[#Detecting Cryptocurrency Mining Malware#Memory Analysis|Memory Analysis]]
-	- [[#Detecting Cryptocurrency Mining Malware#Automated Detection Script|Automated Detection Script]]
-- [[#Network Analysis and Security Commands|Network Analysis and Security Commands]]
-	- [[#Network Analysis and Security Commands#Advanced Network Analysis|Advanced Network Analysis]]
-	- [[#Network Analysis and Security Commands#Network Traffic Analysis with tcpdump|Network Traffic Analysis with tcpdump]]
-	- [[#Network Analysis and Security Commands#iptables for Traffic Analysis|iptables for Traffic Analysis]]
-- [[#File System Security and Analysis|File System Security and Analysis]]
-	- [[#File System Security and Analysis#File System Timeline Analysis|File System Timeline Analysis]]
-- [[#Permission and Ownership Analysis|Permission and Ownership Analysis]]
-- [[#Process Analysis and System Monitoring|Process Analysis and System Monitoring]]
-	- [[#Process Analysis and System Monitoring#File Descriptor and Open File Analysis|File Descriptor and Open File Analysis]]
-- [[#Memory Analysis and Forensics|Memory Analysis and Forensics]]
-- [[#System Performance and Resource Monitoring|System Performance and Resource Monitoring]]
-- [[#Log Analysis and Security Monitoring|Log Analysis and Security Monitoring]]
-	- [[#Log Analysis and Security Monitoring#Advanced Log Correlation|Advanced Log Correlation]]
-- [[#SSH Security Configuration Analysis|SSH Security Configuration Analysis]]
-- [[#User Account Analysis and Auditing|User Account Analysis and Auditing]]
-- [[#System Security Auditing|System Security Auditing]]
-- [[#Package and Software Integrity Verification|Package and Software Integrity Verification]]
-- [[#System Hardening Automation|System Hardening Automation]]
-- [[#Command Logging and Audit Trail|Command Logging and Audit Trail]]
-- [[#Performance and Resource Considerations|Performance and Resource Considerations]]
-- [[#Combining Commands for Comprehensive Analysis|Combining Commands for Comprehensive Analysis]]
-- [[#Automated Security Monitoring Script|Automated Security Monitoring Script]]
-- [[#Advanced Forensics and Timeline Analysis|Advanced Forensics and Timeline Analysis]]
-	- [[#Advanced Forensics and Timeline Analysis#Data Recovery|Data Recovery]]
-- [[#Best Practices for Non-Disruptive Command Usage|Best Practices for Non-Disruptive Command Usage]]
-- [[#Conclusion|Conclusion]]
+## Table of Contents
+
+1. [Initial Incident Response Triage](#initial-incident-response-triage)
+    - [Incident Response Workflow](#incident-response-workflow)
+2. [Detecting Cryptocurrency Mining Malware](#detecting-cryptocurrency-mining-malware)
+    - [CPU Usage Analysis](#cpu-usage-analysis)
+    - [Network Connection Analysis](#network-connection-analysis)
+    - [File System Indicators](#file-system-indicators)
+    - [Process Name Analysis](#process-name-analysis)
+    - [Memory Analysis](#memory-analysis)
+    - [Automated Detection Script](#automated-detection-script)
+3. [Network Analysis and Security Commands](#network-analysis-and-security-commands)
+    - [Advanced Network Analysis](#advanced-network-analysis)
+    - [Network Traffic Analysis with tcpdump](#network-traffic-analysis-with-tcpdump)
+    - [iptables for Traffic Analysis](#iptables-for-traffic-analysis)
+4. [File System Security and Analysis](#file-system-security-and-analysis)
+    - [File System Timeline Analysis](#file-system-timeline-analysis)
+5. [Permission and Ownership Analysis](#permission-and-ownership-analysis)
+6. [Process Analysis and System Monitoring](#process-analysis-and-system-monitoring)
+    - [File Descriptor and Open File Analysis](#file-descriptor-and-open-file-analysis)
+7. [Memory Analysis and Forensics](#memory-analysis-and-forensics)
+8. [System Performance and Resource Monitoring](#system-performance-and-resource-monitoring)
+9. [Log Analysis and Security Monitoring](#log-analysis-and-security-monitoring)
+    - [Advanced Log Correlation](#advanced-log-correlation)
+10. [SSH Security Configuration Analysis](#ssh-security-configuration-analysis)
+11. [User Account Analysis and Auditing](#user-account-analysis-and-auditing)
+12. [System Security Auditing](#system-security-auditing)
+13. [Package and Software Integrity Verification](#package-and-software-integrity-verification)
+14. [System Hardening Automation](#system-hardening-automation)
+15. [Command Logging and Audit Trail](#command-logging-and-audit-trail)
+16. [Performance and Resource Considerations](#performance-and-resource-considerations)
+17. [Combining Commands for Comprehensive Analysis](#combining-commands-for-comprehensive-analysis)
+18. [Automated Security Monitoring Script](#automated-security-monitoring-script)
+19. [Advanced Forensics and Timeline Analysis](#advanced-forensics-and-timeline-analysis)
+    - [Data Recovery](#data-recovery)
+20. [Best Practices for Non-Disruptive Command Usage](#best-practices-for-non-disruptive-command-usage)
+21. [Conclusion](#conclusion)
 
 
 ## Initial Incident Response Triage
