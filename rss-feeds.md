@@ -1,0 +1,13 @@
+https://status.bitwarden.com/state_feed/feed
+https://www.raspberrypi.com/news/feed/
+https://feeds.eff.org/howtofixtheinternet
+https://feeds.megaphone.fm/TBIEA2761282490
+https://9to5mac.com/feed/
+https://feeds.arstechnica.com/arstechnica/apple
+https://feeds.arstechnica.com/arstechnica/technology-lab
+https://feeds.arstechnica.com/arstechnica/cars
+https://github.com/FreshRSS/FreshRSS/releases.atom
+https://news.itsfoss.com/latest/rss/
+https://feeds.macrumors.com/MacRumors-Front
+https://www.macworld.com/feed
+https://mariushosting.com/feed/
