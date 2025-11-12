@@ -1,0 +1,39 @@
+# News Aggregator sites and tools
+- https://brutalist.report/topic/tech?
+- https://feedly.com
+- https://cybermonit.com
+- https://www.newsnow.com/us/Tech/Cyber+Security
+- https://cyberscoop.com
+- https://tldr.tech
+# Daily News Sources
+- https://news.sophos.com/en-us/category/serious-security/
+- https://taosecurity.blogspot.com
+- https://www.ghacks.net
+- https://beebom.com
+- https://www.infosecurity-magazine.com
+- https://www.cnet.com
+- https://www.wired.com
+- https://www.malwarebytes.com/blog/category/news
+- https://www.anomali.com/blog
+- https://research.checkpoint.com/intelligence-reports/
+- https://thehackernews.com
+- https://risky.biz
+- https://www.bleepingcomputer.com
+- https://www.troyhunt.com
+- https://www.itsecurityguru.org
+- https://www.vice.com/en/section/tech/
+- https://krebsonsecurity.com
+- https://www.csoonline.com
+- https://www.lastwatchdog.com
+- https://www.pcworld.com
+- https://www.afcea.org/signal-media#
+- https://www.schneier.com
+- https://fossbytes.com
+- https://www.tripwire.com/state-of-security
+- https://www.darkreading.com
+- https://www.futuristech.info
+- https://www.computerworld.com
+- https://www.cio.com
+# Weekly News Reviews
+- https://www.scworld.com/security-weekly
+- https://this.weekinsecurity.com

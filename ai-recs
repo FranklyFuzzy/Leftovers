@@ -1,0 +1,28 @@
+From Grok on nov 11 2025:
+
+### Updated Recommendations for 16GB M1 MacBook Air
+
+The M1 MacBook Air with 16GB unified memory is still very capable for local LLMs via Ollama or LM Studio, as both frameworks are well-optimized for Apple Silicon (including M1). However, the M1's architecture (8-core CPU/GPU, 68 GB/s memory bandwidth) means inference speeds are slower than on M2/M3/M4 chips—expect 10-15 tokens/second for 7B-8B models in Q4/Q5 quantization, dropping to 5-10 t/s for 14B-16B. Larger models (e.g., 16B quantized) fit thanks to unified memory but may cause occasional swapping if context is long or multitasking is heavy. Benchmarks show models like Llama 3.1 8B run smoothly without major issues, though not as snappily as on newer hardware. This doesn't drastically change my prior recommendations, but I've refined them slightly for M1-specific performance: sticking to Q4/Q5 for balance, and opting for efficient models like DeepSeek's Lite variants where they outperform smaller ones on 16GB setups. Avoid Q8 or higher quant for speed.
+
+| Category                     | Best Model                    | Why It's Recommended                                                                                                                                             | Approx. RAM Usage (Quantized) | Notes                                                                                                                                 | url                                                                                                                                            |
+| ---------------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Overall (General Purpose)    | Llama 3.1 8B Q5               | Excellent all-around coherence, reasoning, and versatility; runs at usable speeds (~12-15 t/s) on M1 without overload.                                           | ~6GB                          | Confirmed feasible and performant on M1 16GB via Ollama; great for chat/Q&A.                                                          | [https://ollama.com/library/llama3.1:8b-instruct-q5_K_M](https://ollama.com/library/llama3.1:8b-instruct-q5_K_M)                               |
+| Coding                       | DeepSeek-Coder-V2 Lite 16B Q4 | Superior for code generation/debugging across languages; higher parameter count boosts accuracy on 16GB M1, with faster inference than 7B alternatives in tests. | ~8-10GB                       | Upgraded from 7B version—fits and performs well on M1; use Ollama for easy pulls. Qwen2.5-Coder 14B Q4 as alternative if speed dips.  | [https://ollama.com/library/deepseek-coder-v2:16b-lite-instruct-q4_K_M](https://ollama.com/library/deepseek-coder-v2:16b-lite-instruct-q4_K_M) |
+| Writing                      | Mistral 7B Instruct Q5        | Natural, low-hallucination output for creative/editing tasks; efficient on M1 for quick iterations.                                                              | ~5GB                          | No change—solid for prose/narratives; Llama 3.1 8B works too if you prefer structure.                                                 | [https://ollama.com/library/mistral:7b-instruct-q5_K_M](https://ollama.com/library/mistral:7b-instruct-q5_K_M)                                 |
+| Agentic (Reasoning/Tool Use) | Phi-3 Medium 14B Q4           | Strong multi-step reasoning and planning; handles agent workflows without excessive slowdown on M1.                                                              | ~7GB                          | Fits comfortably; for more advanced agentic, try GLM-4-Air if available (similar size, good for tool-calling), but Phi-3 is reliable. | [https://ollama.com/library/phi3:14b-medium-4k-instruct-q4_K_M](https://ollama.com/library/phi3:14b-medium-4k-instruct-q4_K_M)                 |
+
+ollama list
+NAME                                          ID              SIZE      MODIFIED     
+phi3:14b-medium-4k-instruct-q4_K_M            4de15128ef23    8.6 GB    11 hours ago    
+deepseek-coder-v2:16b-lite-instruct-q4_K_M    dac6ff6589c9    10 GB     11 hours ago    
+mistral:7b-instruct-q5_K_M                    8397c99c426f    5.1 GB    12 hours ago    
+llama3.1:8b-instruct-q5_K_M                   27fe1b0ab52c    5.7 GB    14 hours ago    
+
+Results:
+found deepseek crashes and has resource usage issues.
+
+---
+
+From gemini 2.5 pro
+recommends stop using llama3 7b for local file manipulation task, says its an old model and recommends i run `ollama pull llama3`  then run `interpreter --model ollama/llama3` and the model will have the sudden abilty to read files.
+
