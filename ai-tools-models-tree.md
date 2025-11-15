@@ -102,9 +102,9 @@ Agentic tool use (JSON, functions, workflows)
                                │ Yes
                                ▼
                ┌───────────────────────────────────────────────┐
-               │ Use Nomad-7B                                  │
-               │  » Best 7B for tool use                       │
-               │  » Extremely reliable JSON / function calling │
+               │ Use One of the cloud optoins below            │
+               │                                               │
+               │                                               │
                └───────────────────────────────────────────────┘
 
                                │ No
