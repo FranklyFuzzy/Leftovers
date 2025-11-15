@@ -2,9 +2,9 @@
 | Name             | Use case         | Thoughts                                                                     |
 | ---------------- | ---------------- | ---------------------------------------------------------------------------- |
 | Ollama           | LLM download mgr | Easy to use                                                                  |
-| opencode         | CLI              | Free access to Grok and PkL. (Requires gollama to find/link ollama models).  |
+| opencode         | CLI              | Free access to Grok and PkL.        |
 | open-interpreter | CLI              | Nice agentic interaction                                                     |
-| LM Studio        | GUI              | Pretty interface with chat history and OpenAI-compatible.                    |
+| LM Studio        | GUI              | Pretty interface with chat history and OpenAI-compatible. (Requires gollama to find/link ollama models). |
 
 # Favorite Models
 ## Local
