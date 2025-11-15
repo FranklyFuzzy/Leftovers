@@ -1,4 +1,5 @@
 (Cheat Sheet)
+
 General Chat / Writing
 - light → qwen2.5:3b
 - normal → mistral:7b q5
