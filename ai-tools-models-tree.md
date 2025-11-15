@@ -4,12 +4,15 @@ General Chat / Writing
 - light → qwen2.5:3b
 - normal → mistral:7b q5
 - high-quality writing or reasoning → llama3.1
+
 Coding
 - default / best local coder → qwen2.5-coder 7b q4
 - deep refactors → cloud Claude Sonnet
 - if struggling locally → llama3.1:8b
+
 File Ops & CLI
 - fastest agent → qwen2.5:3b
+
 Agentic tool use (JSON, functions, workflows)
 - best tool-use model → llama3.1:8b
 
