@@ -13,7 +13,7 @@
 | --------------------------- | ----------------------------------- | ----------------- |
 | mistral:7b-instruct-q5_K_M  | General chatting and writing helper | Fine for chatting |
 | llama3.2:3b                 | Quick file operation                | not super smart   |
-| llama3.1:8b-instruct-q5_K_M | General/Writing                     | -                 |
+| llama3.1:8b-instruct-q5_K_M | General/Writing                     | Best writing/reasoning  |
 | qwen2.5-coder:1.5b          | Autocomplete in VS Code             | Works well enough |
 
 ## Cloud
