@@ -9,7 +9,6 @@ Coding
 - if struggling locally → llama3.1:8b
 File Ops & CLI
 - fastest agent → qwen2.5:3b
-- fallback → llama3.2:3b
 Agentic tool use (JSON, functions, workflows)
 - best tool-use model → llama3.1:8b
 
@@ -84,13 +83,6 @@ Agentic tool use (JSON, functions, workflows)
                      │  » Great for opencode + open-interpreter│
                      └─────────────────────────────────────────┘
 
-                                 │ No
-                                 ▼
-                     ┌─────────────────────────────────────────┐
-                     │ Use llama3.2:3b                         │
-                     │  » Ultra-light fallback                 │
-                     │  » Best when system under pressure      │
-                     └─────────────────────────────────────────┘
 
 
 ─────────────────────────────────────────────────────────────────────────────
