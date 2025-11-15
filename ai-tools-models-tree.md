@@ -102,9 +102,7 @@ Agentic tool use (JSON, functions, workflows)
                                │ Yes
                                ▼
                ┌───────────────────────────────────────────────┐
-               │ Use One of the cloud optoins below            │
-               │                                               │
-               │                                               │
+               │ Use One of the cloud options below            │
                └───────────────────────────────────────────────┘
 
                                │ No
