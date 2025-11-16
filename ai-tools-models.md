@@ -37,9 +37,26 @@
 | deepseek-coder:6.7b                | Coding           | Testing                                                            |
 
 
-Cloud
+## Inference/API Providers
 
-| Name    | Use case | Thoughts |
-| ------- | -------- | -------- |
-| Kimi k2 | Coding   | -        |
-| Qwen    | Coding   | -        |
+Companies that host models (often open source ones) and provide API access.
+
+|Name|Pricing|Notes|
+|---|---|---|
+|Groq|Pay-per-token (varies by model). Example: Llama 3.1 70B ~$0.59/$0.79 per 1M tokens (input/output)|Free tier with account, very fast inference with LPU architecture|
+|Together AI|Pay-per-token (varies by model). Generally competitive with other providers|$25 free credits for new users|
+|Replicate|Pay-per-second based on hardware used. CPU: $0.0001/sec, GPU ranges from $0.000225/sec (T4) to $0.0058/sec (8x A40)|Pay-as-you-go, only pay when code is running, free tier with limited credits|
+|Fireworks AI|Pay-per-token. Example: Llama models range from $0.20-$3.00 per 1M input tokens|Free tier with credits, very fast inference, supports fine-tuning|
+|Raycast|Pro: $8/month (or $10/month), Team: $12/user/month. Advanced AI add-on: additional ~$4-8/month|Pro and Advanced tiers. Mac-only productivity tool with AI integration|
+
+## Foundational Providers
+
+Advanced, state-of-the-art models pushing the boundaries of AI capabilities
+
+| Name             | Pricing                                                                                                                                              | CLI?                                               | CLI Access                                            | Notes                                                                                                  |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Google Gemini    | Free tier: 1.5 Flash (15 RPM, 1M TPM, 1500 RPD), 1.5 Pro (2 RPM, 32K TPM, 50 RPD). Paid: Flash $0.075-$0.30/1M, Pro $1.25-$10/1M (varies by context) | Yes (Gemini CLI - official, open source)           | Free with Google account or API key                   | Free tier with Google account via AI Studio, 60 RPM/1000 RPD free limits, pay-as-you-go for production |
+| Anthropic Claude | Haiku 4.5: $1/$5 per 1M tokens. Sonnet 4.5: $3/$15 per 1M. Opus 4: $15/$75 per 1M (input/output)                                                     | Yes (Claude Code)                                  | Requires Pro/Max subscription OR API key with billing | Pro ($20/mo) or Max ($100-200/mo) subscription includes CLI, OR use separate pay-as-you-go API         |
+| OpenAI GPT       | GPT-4o: $3/$10 per 1M. GPT-4.1: $10/$30 per 1M. GPT-5: $15/$60 per 1M. o4-mini: $4/$16 per 1M (input/output)                                         | Yes (Codex CLI for coding, openai command for API) | Free to install, requires API key with billing        | Pay-as-you-go API pricing only, subscriptions (Plus $20/mo) are separate and don't include API access  |
+| Alibaba Qwen     | Qwen3-Max: $0.459/$1.836 per 1M (50% price cut). Qwen2.5: $0.525+ per 1M                                                                             | Yes (official CLI)                                 | Free to install, requires Alibaba Cloud API key       | Very competitive pricing. Free tier in Singapore region. Many models open-source under Apache 2.0      |
+| Moonshot Kimi    | Kimi K2: $0.16/$2.63 per 1M tokens | Yes (Kimi CLI) | Free to install, requires Moonshot API key | 1T parameter MoE model. Known for long-context (200K+ tokens) and agentic capabilities |
